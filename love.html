@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy International Girlfriend Day, Mama!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffe4e6, #fef2f2);
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #ff6b6b;
+            transform: rotate(-45deg);
+            animation: float 6s infinite;
+        }
+        .heart:before,
+        .heart:after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: #ff6b6b;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart:before {
+            top: -10px;
+            left: 0;
+        }
+        .heart:after {
+            left: 10px;
+            top: 0;
+        }
+        @keyframes float {
+            0% { transform: translateY(0) rotate(-45deg); opacity: 1; }
+            100% { transform: translateY(-100vh) rotate(-45deg); opacity: 0; }
+        }
+        .photo-frame {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            margin: 1rem auto;
+        }
+        .photo-frame img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .photo-frame::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 5px solid #ff99cc;
+            border-radius: 15px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Floating Hearts Animation -->
+    <script>
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 3 + 3 + 's';
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 6000);
+        }
+        setInterval(createHeart, 500);
+    </script>
+
+    <!-- Header -->
+    <header class="text-center py-10">
+        <h1 class="text-5xl font-bold text-pink-600 animate-bounce">Happy International Girlfriend Day, Mama!</h1>
+        <p class="mt-4 text-xl text-gray-600">To my favorite person across the miles, you make every day brighter.</p>
+    </header>
+
+    <!-- Romantic Message -->
+    <section class="max-w-2xl mx-auto text-center py-10 px-4">
+        <h2 class="text-3xl font-semibold text-pink-500">My Heart Beats for You</h2>
+        <p class="mt-4 text-lg">
+            Mama, even though we're miles apart, you're always in my heart. You're my safe place, my best friend, and my everything. 
+            Every moment with you, whether it's a Discord movie night or a late-night call, feels like magic. I love you more than words can say.
+        </p>
+    </section>
+
+    <!-- Memories Section -->
+    <section class="max-w-4xl mx-auto py-10 px-4">
+        <h2 class="text-3xl font-semibold text-pink-500 text-center">Our Special Moments</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <!-- Photo 1: Movie Date -->
+            <div class="photo-frame">
+                <img src="https://via.placeholder.com/300x200?text=Movie+Date+on+Discord" alt="Movie Date on Discord">
+                <p class="mt-2 text-center text-gray-600">Our cozy Discord movie dates, laughing and crying together.</p>
+            </div>
+            <!-- Photo 2: Playing Games -->
+            <div class="photo-frame">
+                <img src="https://via.placeholder.com/300x200?text=Playing+Games+Together" alt="Playing Games Together">
+                <p class="mt-2 text-center text-gray-600">Teaming up in games, you're the best partner ever!</p>
+            </div>
+            <!-- Photo 3: Late Night Conversation -->
+            <div class="photo-frame">
+                <img src="https://via.placeholder.com/300x200?text=Late+Night+Conversation" alt="Late Night Conversation">
+                <p class="mt-2 text-center text-gray-600">Late nights talking about everything and nothing, just us.</p>
+            </div>
+            <!-- Photo 4: Her Cute Photo -->
+            <div class="photo-frame">
+                <img src="https://via.placeholder.com/300x200?text=Mama's+Cute+Photo" alt="Mama's Cute Photo">
+                <p class="mt-2 text-center text-gray-600">Your smile, Mama, lights up my whole world.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apology Section -->
+    <section class="max-w-2xl mx-auto text-center py-10 px-4 bg-pink-100 rounded-lg">
+        <h2 class="text-3xl font-semibold text-pink-500">I'm Sorry, Mama</h2>
+        <p class="mt-4 text-lg">
+            I know I haven't always been perfect, and I've had my red flags. I'm sorry for the times I've been distant, moody, or didn't listen as well as I should. 
+            You deserve the best, and I'm working every day to be a better partner for you. Thank you for loving me despite my flaws. I promise to keep growing for us.
+        </p>
+    </section>
+
+    <!-- Closing Message -->
+    <section class="max-w-2xl mx-auto text-center py-10 px-4">
+        <h2 class="text-3xl font-semibold text-pink-500">Forever Yours</h2>
+        <p class="mt-4 text-lg">
+            Mama, you're my dream come true. Here's to more movie nights, game sessions, and late-night talks. Happy International Girlfriend Day, my love!
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-pink-200">
+        <p class="text-gray-600">Made with all my love for Mama 💖</p>
+    </footer>
+</body>
+</html>
